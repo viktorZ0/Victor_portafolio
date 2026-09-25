@@ -20,9 +20,9 @@ export const education: EducationEntry[] = [
   },
   {
     id: 'tecnico-superior',
-    degree: 'Técnico Superior en [ESPECIALIDAD DE TÉCNICO SUPERIOR]',
-    institution: '[NOMBRE DEL INSTITUTO]',
-    period: '[AÑO DE INICIO] - [AÑO DE FINALIZACIÓN]',
+    degree: 'Técnico Superior',
+    institution: 'Instituto Técnico INCOS - Beni',
+    period: '2016 - 2019',
     status: 'completed',
     statusLabel: 'Título obtenido',
     description:
