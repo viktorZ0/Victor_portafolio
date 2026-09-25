@@ -198,14 +198,21 @@ git push
 
 ### GitHub Pages
 
-1. En `vite.config.ts`, cambia `base: '/'` por
-   `base: '/<nombre-del-repositorio>/'`.
-2. Genera el build: `npm run build`.
-3. Publica el contenido de `dist/` en la rama `gh-pages` (por ejemplo con
-   el paquete `gh-pages`, o mediante un workflow de GitHub Actions que
-   suba el artefacto de `dist/` a Pages).
-4. Habilita GitHub Pages en la configuración del repositorio, apuntando a
-   la rama/origen donde publicaste `dist/`.
+El repositorio incluye `.github/workflows/deploy-pages.yml`: cada push a
+`main` compila el sitio y lo publica automáticamente en GitHub Pages
+(usando `actions/deploy-pages`). `vite.config.ts` ya usa
+`/Victor_portafolio/` como `base` cuando el workflow construye el sitio
+(variable `GITHUB_PAGES=true`), y `/` en desarrollo local y en Vercel.
+
+Si el repositorio cambia de nombre, actualiza esa ruta en
+`vite.config.ts`. La primera vez, verifica en **Settings → Pages** que la
+fuente ("Source") sea **GitHub Actions**; el propio workflow la habilita
+al ejecutarse, pero si tu cuenta requiere el permiso "Read and write" para
+Actions (**Settings → Actions → General → Workflow permissions**),
+actívalo antes del primer despliegue.
+
+El sitio queda publicado en:
+`https://<tu-usuario-de-github>.github.io/Victor_portafolio/`
 
 ## Calidad de código
 
