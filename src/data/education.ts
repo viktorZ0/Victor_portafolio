@@ -11,8 +11,8 @@ export const education: EducationEntry[] = [
   {
     id: 'ingenieria-sistemas',
     degree: 'Ingeniería de Sistemas',
-    institution: '[NOMBRE DE LA UNIVERSIDAD]',
-    period: '[AÑO DE INICIO] - [AÑO DE FINALIZACIÓN]',
+    institution: 'UABJB - Universidad Autónoma del Beni José Ballivián',
+    period: '2019 - en curso',
     status: 'in-progress',
     statusLabel: 'Materias completadas | En proceso de titulación',
     description:
