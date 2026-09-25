@@ -9,7 +9,7 @@ import type { SocialLink } from '@/types';
  */
 export const profile = {
   name: 'Víctor',
-  fullName: '[TU NOMBRE COMPLETO]',
+  fullName: 'Victor Cruz Zelada',
   role: 'Ingeniero de Sistemas en etapa final de titulación',
   tagline:
     'Desarrollo soluciones web y aplicaciones enfocadas en resolver problemas reales.',
@@ -20,12 +20,12 @@ export const profile = {
     'Cuento además con formación previa como Técnico Superior, obtenida en un instituto técnico. Esta base técnica complementa mi formación universitaria en el desarrollo de software.',
     'Tengo un fuerte interés por el desarrollo de software y las tecnologías de la información, y he trabajado en distintos proyectos académicos y tecnológicos que puedes conocer en la sección de proyectos.',
   ],
-  location: '[TU UBICACIÓN]',
+  location: 'Beni, Bolivia',
   photo: null as string | null, // Ejemplo: '/src/assets/profile-photo.jpg'
-  email: '[TU EMAIL]',
+  email: 'zeladavictor729@gmail.com',
   social: {
-    github: '[TU GITHUB]',
-    linkedin: '[TU LINKEDIN]',
+    github: 'https://github.com/viktorZ0',
+    linkedin: 'https://www.linkedin.com/in/victor-cruz-zelada-4b7582438/',
   },
 };
 
